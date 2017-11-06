@@ -1,0 +1,66 @@
+{
+  "description": "Women tech speakers & organizers.",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "io.fempire",
+    "tns-android": {
+      "version": "3.2.0"
+    },
+    "tns-ios": {
+      "version": "3.2.0"
+    }
+  },
+  "scripts": {
+    "android": "tns run android",
+    "android:watch": "tns run android --watch",
+    "android:emulator": "tns run android --emulator",
+    "android:emulator:watch": "tns run android --emulator --watch",
+    "build:scss": "node-sass -r ./app/ -o ./app/",
+    "ios": "tns run ios",
+    "ios:watch": "tns run ios --watch",
+    "ios:emulator": "tns run ios --emulator",
+    "ios:emulator:watch": "tns run ios --emulator --watch",
+    "platforms": "npm run platforms:android && npm run platforms:ios",
+    "platforms:android": "tns platform add android",
+    "platforms:ios": "tns platform add ios",
+    "watch:scss": "nodemon -e scss -x \"npm run build:css\"",
+    "ns-bundle": "ns-bundle",
+    "start-android-bundle": "npm run ns-bundle --android --start-app",
+    "start-ios-bundle": "npm run ns-bundle --ios --start-app",
+    "build-android-bundle": "npm run ns-bundle --android --build-app",
+    "build-ios-bundle": "npm run ns-bundle --ios --build-app",
+    "lint": "tslint \"app/**/*.ts\""
+  },
+  "dependencies": {
+    "@angular/animations": "4.2.5",
+    "@angular/common": "4.2.5",
+    "@angular/compiler": "4.2.5",
+    "@angular/core": "4.2.5",
+    "@angular/forms": "4.2.5",
+    "@angular/http": "4.2.5",
+    "@angular/platform-browser": "4.2.5",
+    "@angular/router": "4.2.5",
+    "nativescript-angular": "4.2.0",
+    "nativescript-pro-ui": "3.1.4",
+    "nativescript-theme-core": "1.0.4",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.4.3",
+    "tns-core-modules": "3.2.0",
+    "zone.js": "0.8.17"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.26.0",
+    "babel-types": "6.26.0",
+    "babylon": "6.18.0",
+    "codelyzer": "3.2.0",
+    "lazy": "1.0.11",
+    "nativescript-dev-sass": "1.3.2",
+    "nativescript-dev-typescript": "0.5.1",
+    "node-sass": "4.5.3",
+    "tslint": "5.7.0",
+    "typescript": "2.5.2"
+  },
+  "author": "Michael Solati"
+}
